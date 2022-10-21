@@ -322,3 +322,22 @@ section.skills .item:nth-child(2) .progress-bar .progress{
 section.skills .item:nth-child(3) .progress-bar .progress{
     width: 75%;
 }
+
+/* ================= SERVICES SECTION ================ */
+section.services {
+    background: var(--color-light);
+}
+section.services .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+section.services .container .service {
+    background: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;    
+    cursor: default;
+}
