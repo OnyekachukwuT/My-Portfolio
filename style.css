@@ -340,4 +340,45 @@ section.services .container .service {
     flex-direction: column;
     gap: 2rem;    
     cursor: default;
+    transition: var(--transition);
+}
+section.services .container .service:hover{
+    box-shadow: 0 3rem var(--color-primary-light);
+}
+section.services .container .service span{
+    background: var(--color-warning);
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+/* ================= RECENT WORK (PORTFOLIO) ================ */
+section.recent-work h1 {
+    text-align: left;
+    margin: 3rem 0 1rem;
+    width: 65%;
+}
+section.recent-work .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+section.recent-work .projects .project {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+section.recent-work .projects .project .action {
+    display: flex;
+    gap: 2rem;
+}
+section.recent-work .projects .project .action a{
+    color: var(--color-primary);
+}
+section.recent-work .projects .project .action a:hover {
+    text-decoration: underline;
 }
